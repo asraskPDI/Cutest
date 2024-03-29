@@ -1,7 +1,3 @@
-template-file-path: ./app-test.yaml
-
-parameters:
-
-tags:
-    cost-center: '123456'
-    org: 'AWS'
+template-file-path: app-test.yaml
+parameters: {}
+tags: {}
