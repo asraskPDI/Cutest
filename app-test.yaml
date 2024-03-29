@@ -5,6 +5,17 @@ Resources:
     Properties:
       ImageId: ami-033a1ebf088e56e81
       InstanceType: t2.micro
+Resources:
+   myVPC:
+   Type: AWS::EC2::VPC
+   Properties:
+      CidrBlock: 10.0.0.0/16
+      EnableDnsSupport: 'true'
+      EnableDnsHostnames: 'true'
+      Tags:
+       - Key: stack
+         Value: production
+ 
       
 
       
