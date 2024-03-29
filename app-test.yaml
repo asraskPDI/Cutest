@@ -6,24 +6,5 @@ Resources:
       ImageId: ami-033a1ebf088e56e81
       InstanceType: t2.micro
       
- Resources:
-  S3Bucket:
-    Type: 'AWS::S3::Bucket'
-    DeletionPolicy: Retain
-    Properties:
-      BucketName: test-Bucket
-      Tags:
-       - Key: Name
-         Value: production-s3bucket
-  Resources:
-    myVPC:
-      Type: AWS::EC2::VPC
-      Properties:
-        CidrBlock: 10.0.0.0/16
-        EnableDnsSupport: 'true'
-        EnableDnsHostnames: 'true'
-        Tags:
-         - Key: Name
-           Value: production-vpc       
 
       
